@@ -1,19 +1,19 @@
-// disabledBtn();
-// function moreText() {
-//         let dots = document.getElementById("dots");
-//         let moreText = document.getElementById("more");
-//         let btnText = document.getElementById("myBtn");
-//
-//         if (dots.style.display === "none") {
-//             dots.style.display = "inline";
-//             btnText.innerHTML = "Read more";
-//             moreText.style.display = "none";
-//         } else {
-//             dots.style.display = "none";
-//             btnText.innerHTML = "Read less";
-//             moreText.style.display = "inline";
-//         }
-//     }
+disabledBtn();
+function moreText() {
+        let dots = document.getElementById("dots");
+        let moreText = document.getElementById("more");
+        let btnText = document.getElementById("myBtn");
+
+        if (dots.style.display === "none") {
+            dots.style.display = "inline";
+            btnText.innerHTML = "Read more";
+            moreText.style.display = "none";
+        } else {
+            dots.style.display = "none";
+            btnText.innerHTML = "Read less";
+            moreText.style.display = "inline";
+        }
+    }
 
 $(document).ready(function () {
     $('.services_slider').slick({
@@ -96,19 +96,40 @@ $(document).ready(function () {
     });
 });
 
- //
- // function disabledBtn() {
- //     let sel = document.getElementById("selectItem");
- //     let selectedValue = sel.options[sel.selectedIndex].value;
- //     let btn = document.getElementsByClassName("submitBtn")[0];
- //     if (selectedValue == "null"){
- //         btn.setAttribute("disabled", "disabled");
- //     }
- //     else {
- //         btn.removeAttribute('disabled');
- //     }
- // }
- //
- //
- //
- //
+
+ function disabledBtn() {
+     let sel = document.getElementById("selectItem");
+     let selectedValue = sel.options[sel.selectedIndex].value;
+     let btn = document.getElementsByClassName("submitBtn")[0];
+     if (selectedValue == "null"){
+         btn.setAttribute("disabled", "disabled");
+     }
+     else {
+         btn.removeAttribute('disabled');
+     }
+ }
+
+// анимация скрола
+$(function(){
+    $('a[href^="#"]').on('click', function(event) {
+        // отменяем стандартное действие
+        event.preventDefault();
+
+        var sc = $(this).attr("href"),
+            dn = $(sc).offset().top;
+        /*
+        * sc - в переменную заносим информацию о том, к какому блоку надо перейти
+        * dn - определяем положение блока на странице
+        */
+
+        $('html, body').animate({scrollTop: dn}, 1000);
+
+        /*
+        * 1000 скорость перехода в миллисекундах
+        */
+    });
+});
+
+
+
+

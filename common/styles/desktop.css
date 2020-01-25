@@ -1,7 +1,6 @@
 *{
     padding: 0;
     margin: 0;
-    /*border: 1px solid red;*/
 }
 .container{
     width: 1170px;
@@ -79,6 +78,11 @@ header>.container{
     width: 1170px;
     margin: 0 auto;
 }
+@media screen and (max-width: 1170px){
+    .services_slider_wrapper .container{
+        width: 100%;
+    }
+}
 h2{
     text-transform: uppercase;
 }
@@ -99,7 +103,6 @@ h2{
     flex-direction: row;
     justify-content: space-evenly;
     margin-top: 70px;
-
 }
 .serv_slide{
     display: flex;
@@ -148,7 +151,6 @@ h2{
 .serv_slide:hover .head_text{
     color: #4bcaff;
 }
-
 .prev,
 .next {
     position: absolute;
@@ -166,8 +168,6 @@ h2{
 .next {
     right: 0;
 }
-
-
 /*Video*/
 .video{
     display: flex;
@@ -235,6 +235,13 @@ h2{
     margin-bottom: 30px;
     border: none;
 }
+.ToOrder:hover{
+    cursor: pointer;
+    background: #50aeef;
+}
+.ToOrder:active{
+    background: #0078ef;
+}
 /* entire container, keeps perspective */
 .flip-container {
     perspective: 1000px;
@@ -278,7 +285,7 @@ h2{
     color: rgb(255, 255, 255);
     line-height: 1.527;
     text-align: center;
-    padding: 0 20px 0 20px;
+    padding: 30px;
 }
 .footer_name{
     font-size: 30px;
@@ -375,7 +382,6 @@ h2{
     justify-content: space-evenly;
     flex-wrap: wrap;
     margin-top: 70px;
-
 }
 .client_item{
     display: flex;
@@ -401,8 +407,6 @@ h2{
     text-transform: uppercase;
     font-family: "SegoeUI Bold", sans-serif;
 }
-
-
 .clients_slider_wrapper{
     font-family: "SegoeUI", sans-serif;
 }
@@ -422,7 +426,6 @@ h2{
     width: 117px;
     margin: 0 auto;
 }
-
 .client_slide{
     margin: 0;
 }
@@ -433,7 +436,6 @@ h2{
     text-transform: uppercase;
     font-family: "SegoeUI Bold", sans-serif;
 }
-
 /*Form*/
 .form_block{
     background: #295268;

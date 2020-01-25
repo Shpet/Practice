@@ -10,8 +10,8 @@
     <link rel="stylesheet" href="common/src/slick/slick.css">
 
     <script src="https://kit.fontawesome.com/a876c4265e.js" crossorigin="anonymous" defer></script>
-    <script type="text/javascript" src="../Practice/common/src/jquery/jquery-1.11.0.min.js" defer></script>
-    <script type="text/javascript" src="../Practice/common/src/jquery/jquery-migrate-1.2.1.min.js" defer></script>
+    <script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js" defer></script>
+    <script type="text/javascript" src="http://code.jquery.com/jquery-migrate-1.2.1.min.js" defer></script>
     <script src="common/src/slick/slick.min.js" defer></script>
     <script src="main.js" defer></script>
     <title>Title</title>
@@ -48,7 +48,7 @@
     </div>
 </section>
 <!--SERVICES-->
-<section class="services_slider_wrapper">
+<section class="services_slider_wrapper" id="services">
     <div class="container">
         <h2>services</h2>
         <div class="services_slider">
@@ -87,7 +87,6 @@
         </div>
     </div>
 </section>
-
 <!--VIDEO VIMEO-->
 <section>
     <div class="video">
@@ -113,7 +112,7 @@
                         <div class="back">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab aliquid ducimus
                             iste nihil nisi quaerat temporibus vel. Aliquid consequuntur debitis eius illum maxime modi
                             placeat quo velit vero? Esse, quis.
-                            <button class="ToOrder">TO ORDER!</button>
+                            <a href="#callBack"><button class="ToOrder">TO ORDER!</button></a>
                         </div>
                     </div>
                 </div>
@@ -129,7 +128,7 @@
                         <div class="back">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis dolores
                             ducimus eos ex id illo ipsa maiores molestiae nam necessitatibus, neque nulla obcaecati odit
                             praesentium, quidem reiciendis, sapiente sit temporibus.
-                            <button class="ToOrder">TO ORDER!</button>
+                            <a href="#callBack"><button class="ToOrder">TO ORDER!</button></a>
                         </div>
                     </div>
                 </div>
@@ -145,7 +144,7 @@
                         <div class="back">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab amet aspernatur
                             culpa debitis dolorem doloremque ducimus eaque earum excepturi fuga, incidunt inventore
                             itaque laboriosam libero minima obcaecati, quidem reiciendis voluptatem?
-                            <button class="ToOrder">TO ORDER!</button>
+                            <a href="#callBack"><button class="ToOrder">TO ORDER!</button></a>
                         </div>
                     </div>
                 </div>
@@ -161,7 +160,7 @@
                         <div class="back">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores,
                             assumenda corporis cumque dolor doloribus dolorum eaque eligendi eos harum, laborum nam
                             nostrum omnis optio, placeat quaerat recusandae veritatis vero voluptatem.
-                            <button class="ToOrder">TO ORDER!</button>
+                            <a href="#callBack"><button class="ToOrder">TO ORDER!</button></a>
                         </div>
                     </div>
                 </div>
@@ -200,7 +199,7 @@
     </div>
 </section>
 <!--OUR CLIENTS-->
-<section class="clients">
+<section class="clients" id="clients">
     <div class="container">
         <h2>our clients</h2>
         <div class="block_items_wrapper">
@@ -259,7 +258,6 @@
         </div>
     </div>
 </section>
-
 <section class="clients_slider_wrapper">
     <h2>our clients</h2>
     <div class="clients_slider">
@@ -313,7 +311,6 @@
         </div>
     </div>
 </section>
-
 <!--FORM-->
 <section class="form_block" id="callBack">
     <div class="container">
@@ -336,7 +333,6 @@
                 <textarea rows="5" placeholder="Message..." required></textarea>
                 <button class="submitBtn" type="submit" onclick="disabledBtn()">Send</button>
             </form>
-
         </div>
     </div>
 </section>
@@ -351,6 +347,5 @@
         </div>
     </div>
 </footer>
-
 </body>
 </html>
