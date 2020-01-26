@@ -96,7 +96,7 @@ $(document).ready(function () {
     });
 });
 
-
+ //отключение кнопки при невыбраном селекте
  function disabledBtn() {
      let sel = document.getElementById("selectItem");
      let selectedValue = sel.options[sel.selectedIndex].value;
@@ -130,6 +130,15 @@ $(function(){
     });
 });
 
+// липкий хедер
+window.onscroll = function showHeader() {
+    let header = document.querySelector('.header');
+    if(window.pageYOffset > '200'){
+        header.classList.add('headerFixed');
+    } else {
+        header.classList.remove('headerFixed');
+    }
+};
 
 
 

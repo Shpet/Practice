@@ -85,14 +85,17 @@
         /*width: 40px;*/
         /*height: 40px;*/
         /*z-index: 15;*/
-        border: 1px solid red;
+        /*border: 1px solid red;*/
+    }
+    .burger-line{
+        left: 85%;
     }
     .background>img{
         height: 40px;
         width: auto;
     }
     .background{
-        margin-left: 10%;
+        margin-left: 9%;
     }
     .block_videos{
         width: 100%;
@@ -174,6 +177,25 @@
     /*About us*/
     .aboutUsText>span{
         padding: 0 15px 0 15px;
+    }
+
+    /*cookies*/
+    section.cookie_mess{
+        height: 100vh;
+    }
+    .cookie_mess p{
+        padding: 0 40px;
+        font-size: 14px;
+        line-height: 1.2;
+    }
+    .cookie_mess .cookies_butt{
+        border: 1px solid white;
+        padding: 10px 40px;
+        font-size: 16px;
+        letter-spacing: 1px;
+        user-select: none;
+        background-color: white;
+        color: black;
     }
 }
 

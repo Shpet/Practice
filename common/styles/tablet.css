@@ -7,6 +7,9 @@
     /*.background img{*/
         /*width: 50px;*/
     /*}*/
+    header{
+        height: 60px;
+    }
     .burger-menu{
         height: 40px;
         width: 100%;
@@ -14,6 +17,7 @@
     header>.container{
         padding: 0;
     }
+
     nav>li{
         display: block;
     }
@@ -30,7 +34,7 @@
     }
     .burger-line{
         position: absolute;
-        top: 10px;
+        top: 15px;
         left: 90%;
         right: 10px;
         width: 35px;
@@ -50,11 +54,11 @@
         transition: .5s all;
     }
     .second, .third{
-        top: 20px;
+        top: 25px;
         transition: .5s all;
     }
     .fourth{
-        top: 30px;
+        top: 35px;
         transition: .5s all;
     }
     .main-menu{
@@ -89,13 +93,11 @@
         background: black;
     }
     .background>img{
-        padding-top: 0;
-        height: 40px;
+        padding-top: 10px;
+        height: 45px;
         width: auto;
     }
     .background{
-        width: 50px;
-        height: 56px;
         margin-left: 5%;
         position: absolute;
         z-index: 20;
@@ -324,6 +326,28 @@
         font-size: 14px;
         padding-top: 15px;
     }
+
+    /*cookies*/
+
+    section.cookie_mess{
+        height: 35vh;
+    }
+    .cookie_mess p{
+        padding: 0 40px;
+        font-size: 14px;
+        line-height: 1.2;
+    }
+    .cookie_mess .cookies_butt{
+        border: 1px solid white;
+        padding: 10px 40px;
+        font-size: 16px;
+        letter-spacing: 1px;
+        user-select: none;
+        background-color: white;
+        color: black;
+    }
+
+
     /*FOOTER*/
     .footer_name{
         font-size: 16px;
