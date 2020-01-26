@@ -6,7 +6,7 @@
     width: 1170px;
     margin: 0 auto;
 }
-.cookies_butt, .submitBtn, input::placeholder, textarea::placeholder, button.ToOrder, img[src$="icon.svg"]{
+.cookies_butt, .submitBtn, input::placeholder, textarea::placeholder, a.ToOrder, img[src$="icon.svg"]{
     user-select: none;
 }
 header{
@@ -26,7 +26,6 @@ img[src$="/icon.svg"]{
     top: 0;
     left: 0;
     background: black;
-    opacity: .7;
     animation-name: show_header;
     animation-duration: 1s;
     z-index: 10;
@@ -84,7 +83,7 @@ header>.container{
 }
 .block_videos{
     position: relative;
-    max-height: 100vh;
+    max-height: 730px;
     overflow: hidden;
 }
 .block_videos::after{
@@ -290,7 +289,7 @@ h2{
 }
 .description_prices{
     font-size: 26px;
-    font-family: "SegoeUI";
+    font-family: "SegoeUI", sans-serif;
     color: rgb(255, 255, 255);
     line-height: 1.385;
     text-align: center;
@@ -298,12 +297,13 @@ h2{
     word-wrap: break-word;
 }
 .ToOrder{
-    width: 75%;
-    height: 15%;
+    display: inline-block;
+    text-decoration: none;
+    padding: 10px 40px;
     background: #00aeef;
     color: #fefefe;
     border-radius: 3px;
-    font-family: "SegoeUIBold";
+    font-family: "SegoeUIBold", sans-serif;
     font-size: 26px;
     margin-bottom: 30px;
     border: none;
@@ -359,6 +359,9 @@ h2{
     line-height: 1.527;
     text-align: center;
     padding: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 .footer_name{
     font-size: 30px;
@@ -702,23 +705,7 @@ footer{
         opacity: 0;
         /*top: -100px;*/
     }
-    20%{
-        opacity: .1;
-    }
-    30%{
-        opacity: .2;
-    }
-    40%{
-        opacity: .3;
-    }
-    60%{
-        opacity: .5;
-    }
-    80%{
-        opacity: .6;
-    }
     100%{
-        opacity: .7;
         top: 0;
     }
 }
