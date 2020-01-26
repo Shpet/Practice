@@ -84,7 +84,7 @@ header>.container{
 }
 .block_videos{
     position: relative;
-    max-height: 730px;
+    max-height: 100vh;
     overflow: hidden;
 }
 .block_videos::after{
