@@ -1,3 +1,4 @@
+widthScreen();
 disabledBtn();
 function moreText() {
         let dots = document.getElementById("dots");
@@ -122,7 +123,7 @@ $(function(){
         * dn - определяем положение блока на странице
         */
 
-        $('html, body').animate({scrollTop: dn}, 1000);
+        $('html, body').animate({scrollTop: dn}, 500);
 
         /*
         * 1000 скорость перехода в миллисекундах
@@ -148,6 +149,19 @@ function closeBurger() {
     let sim = document.querySelector('#check-menu');
     if (clientWidth < widthWindow){
         sim.checked = '';
+    }
+}
+
+//фикс
+function widthScreen() {
+    let clientWidth = document.documentElement.clientWidth;
+    let widthWindow = +769;
+    let firstClientsBlock = document.querySelector('.clients');
+    let secondClientsBlock = document.querySelector('.clients_slider_wrapper');
+    console.log(secondClientsBlock);
+    if (clientWidth < widthWindow){
+        firstClientsBlock.removeAttribute('id');
+        secondClientsBlock.id = "clients";
     }
 }
 

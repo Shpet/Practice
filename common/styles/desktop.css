@@ -204,6 +204,7 @@ h2{
     text-align: center;
     font-family: "SegoeUI";
     margin-top: 30px;
+    user-select: text;
 }
 .services_slider_wrapper .head_text{
     color: #efefef;

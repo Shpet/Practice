@@ -16,7 +16,7 @@
     <script src="main.js" defer></script>
     <title>Title</title>
 </head>
-<body >
+<body>
 <div id="top"></div>
 <header class="header">
     <div class="container burger-menu">
@@ -115,7 +115,9 @@
                         <div class="back">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab aliquid ducimus
                             iste nihil nisi quaerat temporibus vel. Aliquid consequuntur debitis eius illum maxime modi
                             placeat quo velit vero? Esse, quis.
-                            <a href="#callBack"><button class="ToOrder">TO ORDER!</button></a>
+                            <a href="#callBack">
+                                <button class="ToOrder">TO ORDER!</button>
+                            </a>
                         </div>
                     </div>
                 </div>
@@ -131,7 +133,9 @@
                         <div class="back">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis dolores
                             ducimus eos ex id illo ipsa maiores molestiae nam necessitatibus, neque nulla obcaecati odit
                             praesentium, quidem reiciendis, sapiente sit temporibus.
-                            <a href="#callBack"><button class="ToOrder">TO ORDER!</button></a>
+                            <a href="#callBack">
+                                <button class="ToOrder">TO ORDER!</button>
+                            </a>
                         </div>
                     </div>
                 </div>
@@ -147,7 +151,9 @@
                         <div class="back">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab amet aspernatur
                             culpa debitis dolorem doloremque ducimus eaque earum excepturi fuga, incidunt inventore
                             itaque laboriosam libero minima obcaecati, quidem reiciendis voluptatem?
-                            <a href="#callBack"><button class="ToOrder">TO ORDER!</button></a>
+                            <a href="#callBack">
+                                <button class="ToOrder">TO ORDER!</button>
+                            </a>
                         </div>
                     </div>
                 </div>
@@ -163,7 +169,9 @@
                         <div class="back">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores,
                             assumenda corporis cumque dolor doloribus dolorum eaque eligendi eos harum, laborum nam
                             nostrum omnis optio, placeat quaerat recusandae veritatis vero voluptatem.
-                            <a href="#callBack"><button class="ToOrder">TO ORDER!</button></a>
+                            <a href="#callBack">
+                                <button class="ToOrder">TO ORDER!</button>
+                            </a>
                         </div>
                     </div>
                 </div>
@@ -202,7 +210,7 @@
     </div>
 </section>
 <!--OUR CLIENTS-->
-<section class="clients">
+<section class="clients"  id="clients">
     <div class="container">
         <h2>our clients</h2>
         <div class="block_items_wrapper">
@@ -261,54 +269,54 @@
         </div>
     </div>
 </section>
-<section class="clients_slider_wrapper" id="clients">
+<section class="clients_slider_wrapper">
     <h2>our clients</h2>
     <div class="clients_slider">
         <div class="client_slide">
             <div>
-                        <img src="common/media/icon.svg" alt="client1">
+                <img src="common/media/icon.svg" alt="client1">
             </div>
             <p class="head_text">Coca-cola</p>
         </div>
         <div class="client_slide">
             <div>
-                        <img src="common/media/icon.svg" alt="client1">
+                <img src="common/media/icon.svg" alt="client1">
             </div>
             <p class="head_text">Coca-cola</p>
         </div>
         <div class="client_slide">
             <div>
-                        <img src="common/media/icon.svg" alt="client1">
+                <img src="common/media/icon.svg" alt="client1">
             </div>
             <p class="head_text">Coca-cola</p>
         </div>
         <div class="client_slide">
             <div>
-                        <img src="common/media/icon.svg" alt="client1">
+                <img src="common/media/icon.svg" alt="client1">
             </div>
             <p class="head_text">Coca-cola</p>
         </div>
         <div class="client_slide">
             <div>
-                        <img src="common/media/icon.svg" alt="client1">
+                <img src="common/media/icon.svg" alt="client1">
             </div>
             <p class="head_text">Coca-cola</p>
         </div>
         <div class="client_slide">
             <div>
-                        <img src="common/media/icon.svg" alt="client1">
+                <img src="common/media/icon.svg" alt="client1">
             </div>
             <p class="head_text">Coca-cola</p>
         </div>
         <div class="client_slide">
             <div>
-                        <img src="common/media/icon.svg" alt="client1">
+                <img src="common/media/icon.svg" alt="client1">
             </div>
             <p class="head_text">Coca-cola</p>
         </div>
         <div class="client_slide">
             <div>
-                        <img src="common/media/icon.svg" alt="client1">
+                <img src="common/media/icon.svg" alt="client1">
             </div>
             <p class="head_text">Coca-cola</p>
         </div>
@@ -325,7 +333,8 @@
         </div>
         <div class="form">
             <form id="userForm">
-                <input type="text" id="name" placeholder="Name" pattern="^[A-za-z]{1,20}$|^[А-ЯЁІЇа-яёії]{1,20}$" required><label for="name"></label>
+                <input type="text" id="name" placeholder="Name" pattern="^[A-za-z]{1,20}$|^[А-ЯЁІЇа-яёії]{1,20}$"
+                       required><label for="name"></label>
                 <input type="email" id="email" placeholder="Email" required><label for="email"></label>
                 <label for="selectItem"></label>
                 <select name="selectItem" form="userForm" id="selectItem" onchange="disabledBtn()">
@@ -343,7 +352,10 @@
 <section class="cookie_mess">
     <div class="container">
         <p>
-            На этом сайте используются файлы cookie. Они нужны для оказания услуг и анализа трафика. Информация о вашем IP-адресе и агенте пользователя, а также показатели производительности и безопасности передаются в Google. Это помогает обеспечивать высокое качество услуг, накапливать статистику использования, а также выявлять и устранять нарушения.
+            На этом сайте используются файлы cookie. Они нужны для оказания услуг и анализа трафика. Информация о вашем
+            IP-адресе и агенте пользователя, а также показатели производительности и безопасности передаются в Google.
+            Это помогает обеспечивать высокое качество услуг, накапливать статистику использования, а также выявлять и
+            устранять нарушения.
         </p>
         <a class="cookies_butt">accept</a>
     </div>
