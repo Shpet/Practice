@@ -113,6 +113,15 @@
         display: none;
     }
     /*SERVICES*/
+    .ToOrder {
+        font-size: 22px;
+    }
+    .flip-container:hover .flipper, .flip-container.hover .flipper {
+        transform: none;
+    }
+    .flip-container.hover .flipper {
+        transform: rotateY(180deg);
+    }
     .services_slider_wrapper{
         font-family: "SegoeUI", sans-serif;
     }
@@ -317,6 +326,9 @@
         font-size: 20px;
         margin: 0 0 55px auto ;
     }
+    .ToOrder{
+        font-size: 20px;
+    }
     .contact img{
         width: 30px;
         height: 40px;
@@ -360,5 +372,10 @@
         font-size: 11px;
         color: #fefefe;
         font-family: "SegoeUI";
+    }
+}
+@media screen and (max-width: 550px) {
+    .ToOrder{
+        font-size: 15px;
     }
 }
