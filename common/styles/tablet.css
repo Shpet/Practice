@@ -21,6 +21,9 @@
     nav>li{
         display: block;
     }
+    .main-menu>ul>li{
+        padding: 5px 0 5px 0;
+    }
     .container{
         position: relative;
     }

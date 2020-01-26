@@ -6,9 +6,15 @@
     width: 1170px;
     margin: 0 auto;
 }
+.cookies_butt, .submitBtn, input::placeholder, textarea::placeholder, button.ToOrder, img[src$="icon.svg"]{
+    user-select: none;
+}
 header{
     width: 100%;
     display: flex;
+    position: fixed;
+    top: 0;
+    z-index: 20;
     /*background: black;*/
 }
 img[src$="/icon.svg"]{
@@ -35,7 +41,6 @@ header>.container{
     justify-content: flex-end;
     width: 60%;
     margin-left: auto;
-    padding-top: 20px;
 }
 .labelBurger{
     display: none;
@@ -48,6 +53,10 @@ header>.container{
 .container>nav>ul>li{
     list-style-type: none;
     text-transform: uppercase;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
 }
 .container>nav>ul>li>a{
     display: flex;
@@ -69,15 +78,63 @@ header>.container{
     padding-top: 20px;
 }
 #video{
+    display: block;
     width: 100%;
-    height: auto;
-    max-height: 100%;
-    z-index: -1;
+    -webkit-filter: blur(10px);
 }
 .block_videos{
     position: relative;
-    margin: -84px 0 -4px 0;
-    z-index: -1;
+    max-height: 730px;
+    overflow: hidden;
+}
+.block_videos::after{
+    content: '';
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.3);
+}
+.text-header{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 1200px;
+    height: 240px;
+    margin: -120px 0 0 -600px;
+    z-index: 1;
+    text-align: center;
+    color: white;
+    font-family: "Segoe UI Light", sans-serif;
+    font-size: 110px;
+    letter-spacing: 20px;
+    text-transform: uppercase;
+}
+
+.sub-text-header{
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    width: 600px;
+    margin: 0 0 50px -300px;
+    z-index: 1;
+    text-align: center;
+    color: white;
+    font-family: "Segoe UI Light", sans-serif;
+    font-size: 18px;
+    letter-spacing: 5px;
+}
+.sub-text-header>a{
+    color: white;
+    text-decoration: none;
+}
+@media screen and (max-width: 1100px) {
+    .text-header{
+        font-size: 70px;
+        height: 120px;
+        margin: -60px 0 0 -600px;
+    }
 }
 /*SERVICES*/
 *,
@@ -104,6 +161,7 @@ h2{
 .services_slider_wrapper{
     display: flex;
     background-color: #204052;
+    border-top: 3px solid #4bcaff;
 }
 .services_slider_wrapper h2 {
     text-align: center;
@@ -599,7 +657,9 @@ section.cookie_mess{
     letter-spacing: 3px;
     transition: .4s;
     cursor: pointer;
-    user-select: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
 }
 .cookie_mess .cookies_butt:hover{
     border: 1px solid black;
@@ -640,7 +700,22 @@ footer{
 @keyframes show_header {
     0%{
         opacity: 0;
-        top: -100px;
+        /*top: -100px;*/
+    }
+    20%{
+        opacity: .1;
+    }
+    30%{
+        opacity: .2;
+    }
+    40%{
+        opacity: .3;
+    }
+    60%{
+        opacity: .5;
+    }
+    80%{
+        opacity: .6;
     }
     100%{
         opacity: .7;

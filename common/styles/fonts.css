@@ -10,3 +10,8 @@
     font-family: "SegoeUISB"; /* Имя шрифта */
     src: url("../fonts/seguisb.ttf"); /* Путь к файлу со шрифтом */
 }
+
+@font-face {
+    font-family: "Segoe UI Light";
+    src: url("../fonts/segoeuil.ttf");
+}

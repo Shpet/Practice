@@ -16,11 +16,12 @@
     <script src="main.js" defer></script>
     <title>Title</title>
 </head>
-<body>
+<body >
+<div id="top"></div>
 <header class="header">
     <div class="container burger-menu">
         <div class="background">
-            <img src="common/media/icon.svg">
+            <a href="#top"><img src="common/media/icon.svg"></a>
         </div>
         <input type="checkbox" id="check-menu">
         <label for="check-menu"></label>
@@ -30,11 +31,11 @@
         <div class="burger-line fourth"></div>
         <nav class="main-menu">
             <ul>
-                <li><a href="#services">services</a></li>
-                <li><a href="#prices">prises</a></li>
-                <li><a href="#aboutUs">about us</a></li>
-                <li><a href="#clients">our clients</a></li>
-                <li><a href="#callBack">callback</a></li>
+                <li><a href="#services" onclick="closeBurger()">services</a></li>
+                <li><a href="#prices" onclick="closeBurger()">prises</a></li>
+                <li><a href="#aboutUs" onclick="closeBurger()">about us</a></li>
+                <li><a href="#clients" onclick="closeBurger()">our clients</a></li>
+                <li><a href="#callBack" onclick="closeBurger()">callback</a></li>
             </ul>
         </nav>
     </div>
@@ -42,6 +43,8 @@
 <!--video background-->
 <section>
     <div class="block_videos">
+        <div class="text-header">Name company</div>
+        <div class="sub-text-header"><a href="#callBack">Simple, Beautiful and Amazing</a></div>
         <video id="video" poster="common/media/preload.jpg" autoplay muted loop>
             <source src="common/video/videoBG.mp4" type="video/mp4">
         </video>
@@ -322,7 +325,7 @@
         </div>
         <div class="form">
             <form id="userForm">
-                <input type="text" id="name" placeholder="Name" required><label for="name"></label>
+                <input type="text" id="name" placeholder="Name" pattern="^[A-za-z]{1,20}$|^[А-ЯЁІЇа-яёії]{1,20}$" required><label for="name"></label>
                 <input type="email" id="email" placeholder="Email" required><label for="email"></label>
                 <label for="selectItem"></label>
                 <select name="selectItem" form="userForm" id="selectItem" onchange="disabledBtn()">

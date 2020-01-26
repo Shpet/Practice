@@ -80,6 +80,9 @@
     /*#check-menu:checked ~ .burger-menu{*/
         /*background: black;*/
     /*}*/
+    .main-menu{
+        padding: 0 0 0 60%;
+    }
     .burger-menu>label{
         margin: 0 0 0 85%;
         /*width: 40px;*/

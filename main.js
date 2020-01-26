@@ -141,4 +141,17 @@ window.onscroll = function showHeader() {
 };
 
 
+//закрытие бургера
+function closeBurger() {
+    let clientWidth = document.documentElement.clientWidth;
+    let widthWindow = +768;
+    let sim = document.querySelector('#check-menu');
+    console.log(sim);
+    if (clientWidth < widthWindow){
+        sim.checked = '';
+    }
+}
+
+
+
 
