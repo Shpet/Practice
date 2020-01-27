@@ -247,7 +247,7 @@ h2{
 .video{
     display: flex;
     justify-content: center;
-    background: black;
+    background: #295268;
 }
 .vimeo{
     width: 640px;
