@@ -24,6 +24,12 @@
     .main-menu>ul>li{
         padding: 5px 0 5px 0;
     }
+    .visibleDeskClients{
+        display: none;
+    }
+    .visibleTabClients{
+        display: list-item;
+    }
     .container{
         position: relative;
     }

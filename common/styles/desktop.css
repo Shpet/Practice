@@ -67,6 +67,9 @@ header>.container{
     font-family: "SegoeUI";
     color: rgb(255, 255, 255);
 }
+.visibleTabClients{
+    display: none;
+}
 #check-menu{
     display: none;
 }

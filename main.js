@@ -1,4 +1,4 @@
-widthScreen();
+
 disabledBtn();
 function moreText() {
         let dots = document.getElementById("dots");
@@ -21,7 +21,7 @@ $(document).ready(function () {
         arrows: false,
         dots: false,
         infinite: true,
-        speed: 1000,
+        speed: 900,
         autoplaySpeed: 5000,
         autoplay: false,
         slidesToShow: 4,
@@ -62,7 +62,7 @@ $(document).ready(function () {
         arrows: false,
         dots: false,
         infinite: true,
-        speed: 1000,
+        speed: 900,
         autoplaySpeed: 5000,
         autoplay: false,
         slidesToShow: 8,
@@ -149,19 +149,6 @@ function closeBurger() {
     let sim = document.querySelector('#check-menu');
     if (clientWidth < widthWindow){
         sim.checked = '';
-    }
-}
-
-//фикс
-function widthScreen() {
-    let clientWidth = document.documentElement.clientWidth;
-    let widthWindow = +769;
-    let firstClientsBlock = document.querySelector('.clients');
-    let secondClientsBlock = document.querySelector('.clients_slider_wrapper');
-    console.log(secondClientsBlock);
-    if (clientWidth < widthWindow){
-        firstClientsBlock.removeAttribute('id');
-        secondClientsBlock.id = "clients";
     }
 }
 
