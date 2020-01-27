@@ -1,4 +1,4 @@
-
+checkCookie();
 disabledBtn();
 function moreText() {
         let dots = document.getElementById("dots");
@@ -152,6 +152,24 @@ function closeBurger() {
     }
 }
 
+function checkCookie() {
+    let cookie = localStorage.getItem('cookie');
+    if (cookie == null){
+        localStorage.setItem('cookie', false)
+    }
+    document.getElementsByClassName('cookie_mess')[0].style.display = 'flex';
+    if (cookie == 'true'){
+        document.getElementsByClassName('cookie_mess')[0].style.display = 'none';
+    }
+}
+
+function acceptCookie() {
+    let cookie = localStorage.getItem('cookie');
+    document.getElementsByClassName('cookie_mess')[0].style.display = 'none';
+    cookie = true;
+    localStorage.setItem('cookie', cookie);
+
+}
 
 
 
