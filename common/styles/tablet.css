@@ -370,6 +370,9 @@
     .upButton{
         left: 85%;
     }
+    .picUpBtn:active{
+        opacity: 0.7;
+    }
 
 
     /*FOOTER*/
