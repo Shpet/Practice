@@ -131,13 +131,25 @@ $(function(){
     });
 });
 
-// липкий хедер
+// липкий хедер и появление кнопки back to top
 window.onscroll = function showHeader() {
     let header = document.querySelector('.header');
+    let upBtn = document.querySelector('.upButton');
+    let picBtn = document.querySelector('.picUpBtn');
     if(window.pageYOffset > '200'){
         header.classList.add('headerFixed');
     } else {
         header.classList.remove('headerFixed');
+    }
+    if (window.pageYOffset > '500'){
+        upBtn.style.display = 'block';
+    } else {
+        upBtn.style.display = 'none';
+    }
+    if (window.pageXOffset < '1350'){
+        picBtn.style.opacity = '0.4';
+    }else {
+        picBtn.style.opacity = '1';
     }
 };
 

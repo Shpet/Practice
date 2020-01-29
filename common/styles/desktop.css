@@ -208,6 +208,13 @@ h2{
     font-family: "SegoeUI";
     margin-top: 30px;
 }
+.noBorder{
+    text-decoration: none;
+    outline: none;
+}
+.qaz{
+    text-decoration: none;
+}
 .services_slider_wrapper .head_text{
     color: #efefef;
     font-size: 18px;
@@ -645,7 +652,7 @@ section.cookie_mess{
     color: whitesmoke;
     text-align: center;
     font-family: "SegoeUI", sans-serif;
-    z-index: 15;
+    z-index: 30;
     /*display: none;*/
 }
 .cookie_mess p{
@@ -698,6 +705,17 @@ footer{
     font-size: 18px;
     color: #fefefe;
     font-family: "SegoeUI";
+}
+.upButton{
+    position: fixed;
+    display: none;
+    bottom: 7%;
+    left: 90%;
+    z-index: 10;
+}
+.upButton>a>img{
+    height: auto;
+    width: 75px;
 }
 
 

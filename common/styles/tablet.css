@@ -366,6 +366,10 @@
         background-color: white;
         color: black;
     }
+    /*back to top*/
+    .upButton{
+        left: 85%;
+    }
 
 
     /*FOOTER*/

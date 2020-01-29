@@ -200,5 +200,13 @@
         background-color: white;
         color: black;
     }
+    /*back to top*/
+    .upButton{
+        left: 82%;
+    }
+    .upButton>a>img{
+        height: auto;
+        width: 50px;
+    }
 }
 
