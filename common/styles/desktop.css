@@ -64,7 +64,7 @@ header>.container{
     white-space: nowrap;
     height: 100%;
     font-size: 16px;
-    font-family: "SegoeUI";
+    font-family: "SegoeUI", sans-serif;
     color: rgb(255, 255, 255);
 }
 .visibleTabClients{
@@ -168,7 +168,7 @@ h2{
 .services_slider_wrapper h2 {
     text-align: center;
     font-size: 40px;
-    font-family: "SegoeUI";
+    font-family: "SegoeUI", sans-serif;
     color: rgb(255, 255, 255);
     margin-top: 50px;
     font-weight: 100;
@@ -205,7 +205,7 @@ h2{
 }
 .serv_slide p{
     text-align: center;
-    font-family: "SegoeUI";
+    font-family: "SegoeUI", sans-serif;
     margin-top: 30px;
 }
 .noBorder{
@@ -268,7 +268,7 @@ h2{
 .prices h2 {
     text-align: center;
     font-size: 40px;
-    font-family: "SegoeUI";
+    font-family: "SegoeUI", sans-serif;
     color: rgb(255, 255, 255);
     padding: 70px;
     font-weight: 100;
@@ -285,14 +285,14 @@ h2{
 .name_product{
     text-align: center;
     padding: 20px;
-    font-family: "SegoeUIBold";
+    font-family: "SegoeUIBold", sans-serif;
     font-size: 36px;
     color: #e6e6e6;
 }
 .prices_count{
     text-align: center;
     padding: 15px;
-    font-family: "SegoeUIBold";
+    font-family: "SegoeUIBold", sans-serif;
     font-size: 85px;
     color: #ffffff;
     background: #204052;
@@ -363,7 +363,7 @@ h2{
     transform: rotateY(180deg);
     background: #204052;
     font-size: 18px;
-    font-family: "SegoeUI";
+    font-family: "SegoeUI", sans-serif;
     color: rgb(255, 255, 255);
     line-height: 1.527;
     text-align: center;
@@ -374,7 +374,7 @@ h2{
 }
 .footer_name{
     font-size: 30px;
-    font-family: "SegoeUI";
+    font-family: "SegoeUI", sans-serif;
     text-align: center;
     color: #fefefe;
     padding: 55px;
@@ -388,7 +388,7 @@ h2{
     padding: 25px;
     font-size: 18px;
     color: #fefefe;
-    font-family: "SegoeUI";
+    font-family: "SegoeUI", sans-serif;
 }
 /*ABOUT US*/
 .aboutUs{
@@ -411,7 +411,7 @@ h2{
 }
 .aboutUsNameText>span{
     font-size: 40px;
-    font-family: "SegoeUI";
+    font-family: "SegoeUI", sans-serif;
     color: rgb(249, 249, 249);
     text-transform: uppercase;
     padding-bottom: 50px;
@@ -426,15 +426,14 @@ h2{
 }
 .aboutUsText>span{
     font-size: 18px;
-    font-family: "SegoeUI";
+    font-family: "SegoeUI", sans-serif;
     color: rgb(249, 249, 249);
 }
 #more {display: none;}
 #myBtn{
     margin: 25px 125px;
     width: 100px;
-    font-family: "SegoeUI";
-    color: rgb(249, 249, 249);
+    font-family: "SegoeUI", sans-serif;
     background: #204052;
     border: none;
     font-size: 18px;
@@ -561,14 +560,14 @@ h2{
 }
 .contactText {
     font-size: 35px;
-    font-family: "Segoe UI";
+    font-family: "Segoe UI", sans-serif;
     color: rgb(255, 255, 255);
     text-transform: uppercase;
     border-bottom: 2px solid #3dcbea;
     padding-bottom: 25px;
 }
 .info_contact{
-    font-family: "SegoeUI";
+    font-family: "SegoeUI", sans-serif;
     padding-top: 50px;
     color: #bac3c9;
 }
@@ -586,7 +585,7 @@ h2{
 input[type=text]{
     background: #295268;
     font-size: 34px;
-    font-family: "Segoe UI";
+    font-family: "Segoe UI", sans-serif;
     color: rgb(255, 255, 255);
     margin: 105px 0 30px 0;
     padding: 0 0 0 10px;
@@ -594,7 +593,7 @@ input[type=text]{
 input[type=email]{
     background: #295268;
     font-size: 34px;
-    font-family: "Segoe UI";
+    font-family: "Segoe UI", sans-serif;
     color: rgb(255, 255, 255);
     margin-bottom: 30px;
     padding: 0 0 0 10px;
@@ -602,7 +601,7 @@ input[type=email]{
 select{
     background: #295268;
     font-size: 34px;
-    font-family: "Segoe UI";
+    font-family: "Segoe UI", sans-serif;
     color: rgb(255, 255, 255);
     margin-bottom: 30px;
     padding: 0 0 0 10px;
@@ -610,7 +609,7 @@ select{
 textarea{
     background: #295268;
     font-size: 34px;
-    font-family: "Segoe UI";
+    font-family: "Segoe UI", sans-serif;
     color: rgb(255, 255, 255);
     margin-bottom: 30px;
     padding: 0 10px 0 10px;
@@ -620,7 +619,7 @@ form>button{
     height: 85px;
     background: #00aeef;
     font-size: 34px;
-    font-family: "SegoeUISB";
+    font-family: "SegoeUISB", sans-serif;
     color: rgb(255, 255, 255);
     border: 0;
     margin: 0 0 100px auto ;
@@ -697,7 +696,7 @@ footer{
 }
 .footer_name{
     font-size: 30px;
-    font-family: "SegoeUI";
+    font-family: "SegoeUI", sans-serif;
     text-align: center;
     color: #fefefe;
     padding: 55px;
@@ -711,7 +710,7 @@ footer{
     padding: 25px;
     font-size: 18px;
     color: #fefefe;
-    font-family: "SegoeUI";
+    font-family: "SegoeUI", sans-serif;
 }
 .upButton{
     position: fixed;
