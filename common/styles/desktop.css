@@ -539,6 +539,13 @@ h2{
     flex-direction: row;
     justify-content: space-evenly;
 }
+.form_block textarea{
+    resize: none;
+}
+.form_block textarea:active, .form_block textarea:focus, .form_block select:active, .form_block select:focus{
+    border: 1px solid white;
+    outline: none;
+}
 .contact{
     display: flex;
     flex-direction: column;
@@ -709,13 +716,13 @@ footer{
 .upButton{
     position: fixed;
     display: none;
-    bottom: 7%;
-    left: 90%;
+    bottom: 5%;
+    left: 92%;
     z-index: 10;
 }
 .upButton>a>img{
     height: auto;
-    width: 75px;
+    width: 55px;
 }
 .picUpBtn{
     opacity: 0.4;

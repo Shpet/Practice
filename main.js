@@ -146,11 +146,6 @@ window.onscroll = function showHeader() {
     } else {
         upBtn.style.display = 'none';
     }
-    // if (window.pageXOffset < '1350'){
-    //     picBtn.style.opacity = '0.4';
-    // }else {
-    //     picBtn.style.opacity = '1';
-    // }
 };
 
 

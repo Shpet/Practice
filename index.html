@@ -331,7 +331,7 @@
         </div>
         <div class="form">
             <form id="userForm">
-                <input type="text" id="name" placeholder="Name" pattern="^[A-za-z]{1,20}$|^[А-ЯЁІЇа-яёії]{1,20}$" required><label for="name"></label>
+                <input type="text" id="name" placeholder="Name" pattern="^[A-za-z]{1,20}$|^[А-ЯЁІЇа-яёії]{1,20}$|^[А-ЯЁІЇа-яёії]{1,20}\s[А-ЯЁІЇа-яёії]{1,20}$|^[A-za-z]{1,20}\s[A-za-z]{1,20}$|^[А-ЯЁІЇа-яёії]{1,20}\s[A-ЯЁІЇа-яёії]{1,20}\s[A-ЯЁІЇа-яёії]{1,20}$|^[A-Za-z]{1,20}\s[A-Za-z]{1,20}\s[A-Za-z]{1,20}$" required><label for="name"></label>
                 <input type="email" id="email" placeholder="Email" required><label for="email"></label>
                 <label for="selectItem"></label>
                 <select name="selectItem" form="userForm" id="selectItem" onchange="disabledBtn()">
